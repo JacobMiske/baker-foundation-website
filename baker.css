@@ -14,6 +14,7 @@ header {
     margin: 0;
     color: rgba(0, 0, 0, 0.6);
     text-align: center;
+    align-items: center;
 }
 img {
     height: 75vh;
@@ -58,6 +59,7 @@ h6 {
 	
     header {
         height: 100vh;
+        align-items: center;
     }
     img {
         float: left;
@@ -111,10 +113,37 @@ section {
 }
 
 a:link, a:visited {
-	color: rgba(18, 41, 74, 1.0);
-		text-decoration: none;
+	color: #fff;
+    text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
+}
+
+.top-container {
+    background-color: #48C4E5;
+    padding: 30px;
+    text-align: center;
+}
+
+.header {
+    padding: 10px 16px;
+    background: #555;
+    color: #48C4E5;
+    align-items: center;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .content {
+    padding-top: 102px;
 }

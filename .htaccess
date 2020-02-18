@@ -1,0 +1,2 @@
+RewriteCond %{HTTP_HOST} ^/~baker-foundation/
+RewriteRule ^(.*) https://demos.kennethfriedman.org/baker-foundation/web_scripts/ [P]

@@ -15,7 +15,7 @@
 			<div class="top-container">
 				<h1> The Baker Foundation at MIT</h1>
 			</div>
-			<div class="header" id="myHeader">
+			<div style="align-content: center;" class="header" id="stickyHeader">
 				<table>
 					<tr>
 						<td>
@@ -57,43 +57,6 @@
 					</div>
 				</div>
 			</header>
-			<!-- <section style="padding-bottom: 5%;">
-				<div class="left">
-					<h1>Sections</h1>
-				</div>
-				<div class="right">
-					<div style="margin-top: 0;padding-top: 0;">
-						<a class="nav" href="#about-dean-baker">
-							<h2 style="padding-bottom: 0">About Dean Baker</h2>
-							<p>Learn about Dean Baker and the Baker Foundation made in his honor.</p>
-						</a>
-					</div>
-					<div>
-						<a class="nav" href="#initiatives">
-							<h2 style="padding-bottom: 0">Initiatives</h2>
-							<p>The Baker Foundation helps support initiatives around campus. Hear about each here.</p>
-						</a>
-					</div>
-					<div>
-						<a class="nav" href="#apply">
-							<h2 style="padding-bottom: 0">Apply For Funding!</h2>
-							<p>The Baker Foundation . Hear about each here.</p>
-						</a>
-					</div>
-					<div>
-						<a class="nav" href="#who-we-are">
-							<h2 style="padding-bottom: 0">Who We Are</h2>
-							<p>Learn about the people behind the foundation.</p>
-						</a>
-					</div>
-					<div>
-						<a class="nav" href="#contact">
-							<h2 style="padding-bottom: 0">Contact</h2>
-							<p>Get in touch to ask a question, collaborate, or find out more about us.</p>
-						</a>
-					</div>
-				</div>
-			</section> -->
 			<section style="background: white;padding-top: 5%;padding-bottom: 5%;color: rgba(18, 41, 74, 1.0);">
 				<div class="left">
 					<a name="about-dean-baker"></a>
@@ -174,7 +137,7 @@
 						Find the reimbursement form 
 						<a style="color:blue;" href="https://docs.google.com/forms/d/e/1FAIpQLScc9rRt-rrHWinm0ZPY_yWcM-S6eI2nZbUWzG3VQ-77t2TIxQ/viewform?usp=sf_link">here</a>
 					</p>
-
+					<p> Drop off post-event information: <a href="https://docs.google.com/forms/d/1ZwZRXoO3cw5dWx7kbRYf4zDcn6a112BFe6LGlW5hwx0/viewform?edit_requested=true" style="color:blue;text-decoration: underline">Google Form</a>.</p>
 				</div>
 			</section>
 			<section style="background: white;padding-top: 5%;padding-bottom: 5%;color: rgba(18, 41, 74, 1.0);">
@@ -263,19 +226,20 @@
 			</footer>
 		</article>
 
+		<!-- Keeps the header links in place -->
 		<script>
-			window.onscroll = function() {myFunction()};
+			window.onscroll = function() {sticky_header()};
 			
-			var header = document.getElementById("myHeader");
+			var header = document.getElementById("stickyHeader");
 			var sticky = header.offsetTop;
 			
-			function myFunction() {
+			function sticky_header() {
 			  if (window.pageYOffset > sticky) {
 				header.classList.add("sticky");
 			  } else {
 				header.classList.remove("sticky");
 			  }
 			}
-			</script>
+		</script>
 	</body>
 </html>
